@@ -19,12 +19,16 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "appSqFt",
       "styles": [
+        "../node_modules/materialize-css/dist/css/materialize.css",
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/materialize-css/dist/js/materialize.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
-        "dev": "environments/environment.ts",
+        "dev" : "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
