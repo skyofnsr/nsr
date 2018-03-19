@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';    
 import { Router } from '@angular/router';     
-import { DataService } from '../data.service';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'appSqFt-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  templateUrl: '../about/about.component.html',
+  styleUrls: ['../about/about.component.scss']
 })
 export class AboutComponent implements OnInit {
 
