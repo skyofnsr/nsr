@@ -1,30 +1,12 @@
-<div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        
-          <nav>
-              <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                  <li><a routerLink="">Home</a></li>
-                  <li><a routerLink="about/48">About</a></li>
-                  <li><a routerLink="user/28">Login</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                  <li><a routerLink="">Home</a></li>
-                  <li><a routerLink="about/48">About</a></li>
-                  <li><a routerLink="user/28">Login</a></li>
-                </ul>
-              </div>
-            </nav>
-          
-      </div>
-    </nav>
-  </div>
 
-<!-- <app-header></app-header> -->
+<appSqFt-header></appSqFt-header>
+
+<div class=" color-dark col-6">
+        <appSqFt-header-menu></appSqFt-header-menu>
+</div>
+<div class="container col-6">
+    <router-outlet></router-outlet> 
+</div>
 
 
 
-<router-outlet></router-outlet> 

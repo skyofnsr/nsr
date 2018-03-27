@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
+import {MatMenuModule} from '@angular/material/menu';
 
 import {
     MatToolbarModule,
@@ -23,7 +24,8 @@ import {
     MatIconModule,
     MatProgressSpinnerModule,
 
-    MatSidenavModule
+    MatSidenavModule,
+    MatMenuModule
     ],
   exports: [
     MatToolbarModule,
@@ -32,8 +34,9 @@ import {
     MatInputModule,
     MatIconModule,
     MatProgressSpinnerModule,
-    MatSidenavModule
+    MatSidenavModule,MatMenuModule
+    
 
     ],
 })
-export class Material { }
+export class MaterialModule { }
