@@ -26,6 +26,11 @@
     background-color: black;
     height: 10px;
     border-bottom: 3px solid blue;
+    position: sticky;
+    top:0;
+    left:0;
+    width: 100%;
+
   }
   
   .banner-strip-Bottom {
@@ -46,6 +51,18 @@
   }
 
 
+  .inner-border {
+    margin: 0px;
+    padding:5px 0px;
+  }
+
+  .brand-logo{
+    display: inline-flex;
+  }
+
+  // .rightMenu{
+    
+  // }
   // .example-icon {
   //   padding: 0 14px;
   // }
