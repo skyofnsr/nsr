@@ -1,70 +1,73 @@
-<nav class="navbar navbar-expand-md navbar-dark black">
-    <a class="navbar-brand mb-0 h1" href="#">
-        <img src="./src/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
-        Bootstrap
-      </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container fixed-top">
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top black myNavbar">
+  <div class="nav-wraper mynavbar-wraper">    
+    <button class="navbar-toggler navbar-toggler-left " type="button" aria-controls="navbarSupportedContent" [attr.aria-expanded]="!isCollapsed"
+      aria-label="Toggle navigation" (click)="toggleMenu()">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown" ngbDropdown>
-            <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>Category</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
-              <a class="dropdown-item" href="#">Angular</a>
-              <a class="dropdown-item" href="#">React</a>
-              <a class="dropdown-item" href="#">Vue.js</a>
-            </div>
-          </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+
+
+    <div class="d-md-inline-flex w-100 px-md-4">
+    <div class="mr-auto d-md-inline-flex">
+    <a class="navbar-brand mb-0 p-0 h1">
+      <span class="d-flex flex-row">
+        <b class="logo-First-chr">S</b> 
+        <b class="logo-chr">quareFeet </b>
+        <b class="logo-First-chr">S</b>
+        <b class="logo-chr">olutions</b>
+      </span>
+    </a>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mr-auto  text-center">
+        <!-- <appSqFt-header-menu></appSqFt-header-menu> -->
+        
+        <li class="nav-item active" ngbDropdown>
+          <a class="nav-link" href="">Home
+            <span class="sr-only">(current)</span>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+        </li>
+
+
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" routerLink="about/48">About</a>
+        </li>
+
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" routerLink="user/28">Login</a>
+        </li>
+
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>Category</a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
+            <a class="dropdown-item" href="#">Angular</a>
+            <a class="dropdown-item" href="#">React</a>
+            <a class="dropdown-item" href="#">Vue.js</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+
+        <li class="nav-item" ngbDropdown>
+
         </li>
+
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </div>
+
+    </div>
+
+    <div class="col-md-3 col-sm-12 myLogin">
+      <form class="from-inline">
+        
+        <input class="form-control" type="text" style="margin-top: 1em;margin-bottom: -1em; height:auto" 
+            placeholder="Parvesh Kapoor (0732642)" readonly>
+        
+        <button class="btn btn-sm btn-outline-success" style="height:auto;width: -webkit-fill-available;text-align: left;" 
+            type="submit">Access Level : Admin </button>
       </form>
     </div>
-  </nav>
 
-
-
-<div class="banner-strip"></div>
-
-<div class="navbar-fixed">
-    <nav class="black lighten-2 ">
-        <div class="nav-wrapper">
-            
-            <a href="#"  class="material-icons">menu</a>
-            <span class="brand-logo">        
-                <b class="logo-First-chr">S</b>
-                <b class="logo-chr">quareFeet </b>
-                <b class="logo-First-chr">S</b>
-                <b class="logo-chr">olutions</b>
-            </span>
-            <ul class="right">
-                        <appSqFt-header-menu></appSqFt-header-menu>
-                    </ul>
-                </div>
-                <div class="banner-strip-Bottom"></div>
-            </nav>
+  </div>
+</div>
+</nav>
 </div>

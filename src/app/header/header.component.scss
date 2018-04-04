@@ -26,7 +26,7 @@
     background-color: black;
     height: 10px;
     border-bottom: 3px solid blue;
-    position: sticky;
+    position: absolute ;
     top:0;
     left:0;
     width: 100%;
@@ -56,17 +56,77 @@
     padding:5px 0px;
   }
 
-  .brand-logo{
+  .navbar-brand{
     display: inline-flex;
   }
 
-  // .rightMenu{
-    
-  // }
-  // .example-icon {
-  //   padding: 0 14px;
-  // }
+.myNavbar
+{
+border-bottom:black solid 5px;
+border-top:black solid 5px;
+height: auto;
+padding: 0px;
+
+display: inline-flex;
+}
+
+.mynavbar-wraper{
+  border-bottom: #1b68bb solid 5px;
+  border-top: #1b68bb solid 5px;
+  width: inherit;
+  display: inline-flex;
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .myNavbar {
+  height: auto;  
+}
+// .myNavbar{
+// margin: auto;
+// padding:auto;
+// }
+
+
+}
+
+
+@media screen and (max-width: 750px) {
+  .myLogin{
+   margin-top: -30px;
+  }
   
-  // .example-spacer {
-  //   flex: 1 1 auto;
-  // }
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.from-inline{
+  margin-top: -10px;
+  margin-bottom : -10px;
+}
+
+.btnNavbar{
+  margin-bottom: -30px;
+}
+.lblNavbar{
+  margin-top: 0px;
+  margin-bottom: -20px;
+}
+
+.nav-link{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  
+}

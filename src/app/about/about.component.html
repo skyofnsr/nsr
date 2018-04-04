@@ -1,14 +1,34 @@
-<p>
+<!-- <p>
   about works!
 </p>
 
 <p>
   This is what I'm all about. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>.
 </p>
-
-
 <ul>
   <li *ngFor="let goal of goals">
     {{ goal }}
   </li>
-</ul>
+</ul> -->
+
+<div class="container-fluid">
+    <div class="flexbox flex-1">
+        <!-- START TOP-LEFT TOOLBAR-->
+        <ul class="nav navbar-toolbar">
+            <li>
+                <a class="nav-link sidebar-toggler js-sidebar-toggler" (click)="toggleSidebar()">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </li>
+
+            <li>
+                <a class="nav-link search-toggler js-search-toggler" (click)="toggleSidebar()">
+                    <i class="ti-search"></i>
+                    <span>Search here...</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

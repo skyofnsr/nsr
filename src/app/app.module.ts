@@ -14,6 +14,8 @@ import { UserComponent } from './user/user.component';
 import { HeaderComponent } from './header/header.component';
 import { HeaderMenuComponent } from './header/header-menu/header-menu.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 import { MaterialModule } from './material.module';
 
 
@@ -32,7 +34,7 @@ import { MaterialModule } from './material.module';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-
+    AngularFontAwesomeModule,
     NgbModule.forRoot()
   ],
   providers: [DataService],
