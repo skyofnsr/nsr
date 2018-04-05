@@ -22,40 +22,12 @@
     margin-top: -47px;
   }
   
-  .banner-strip {
-    background-color: black;
-    height: 10px;
-    border-bottom: 3px solid blue;
-    position: absolute ;
-    top:0;
-    left:0;
-    width: 100%;
-
-  }
-  
-  .banner-strip-Bottom {
-    background-color: black;
-    height: 10px;
-    border-top: 3px solid blue;
-  }
-  
   .banner-Marque {
     color: blue;
     background-color: white;
     border: 1px solid black;
   }
   
-  .banner-navbar {
-    margin-bottom: 0px;
-    padding-bottom:30px;
-  }
-
-
-  .inner-border {
-    margin: 0px;
-    padding:5px 0px;
-  }
-
   .navbar-brand{
     display: inline-flex;
   }
@@ -77,17 +49,10 @@ display: inline-flex;
   display: inline-flex;
 }
 
-
-
 @media screen and (min-width: 480px) {
   .myNavbar {
   height: auto;  
 }
-// .myNavbar{
-// margin: auto;
-// padding:auto;
-// }
-
 
 }
 
@@ -98,35 +63,28 @@ display: inline-flex;
   }
   
 }
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  }
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
 
 .from-inline{
   margin-top: -10px;
   margin-bottom : -10px;
 }
 
-.btnNavbar{
-  margin-bottom: -30px;
-}
-.lblNavbar{
-  margin-top: 0px;
-  margin-bottom: -20px;
-}
-
 .nav-link{
   padding-top: 0px;
   padding-bottom: 0px;
   
+}
+
+.marquee {
+  height: 25px;
+  width: auto;
+  background: yellow;
+
+  overflow: hidden;
+  position: relative;
+
+}
+
+.subMenuItem {
+line-height: normal;
 }

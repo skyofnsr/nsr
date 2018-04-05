@@ -1,73 +1,85 @@
-<div class="container fixed-top">
-<nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top black myNavbar">
-  <div class="nav-wraper mynavbar-wraper">    
-    <button class="navbar-toggler navbar-toggler-left " type="button" aria-controls="navbarSupportedContent" [attr.aria-expanded]="!isCollapsed"
-      aria-label="Toggle navigation" (click)="toggleMenu()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark black myNavbar">
+    <div class="nav-wraper mynavbar-wraper">
+      <button class="navbar-toggler navbar-toggler-left " type="button" aria-controls="navbarSupportedContent" [attr.aria-expanded]="!isCollapsed"
+        aria-label="Toggle navigation" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-
-    <div class="d-md-inline-flex w-100 px-md-4">
-    <div class="mr-auto d-md-inline-flex">
-    <a class="navbar-brand mb-0 p-0 h1">
-      <span class="d-flex flex-row">
-        <b class="logo-First-chr">S</b> 
-        <b class="logo-chr">quareFeet </b>
-        <b class="logo-First-chr">S</b>
-        <b class="logo-chr">olutions</b>
-      </span>
-    </a>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
-      <ul class="navbar-nav mr-auto  text-center">
-        <!-- <appSqFt-header-menu></appSqFt-header-menu> -->
-        
-        <li class="nav-item active" ngbDropdown>
-          <a class="nav-link" href="">Home
-            <span class="sr-only">(current)</span>
+      <div class="d-md-inline-flex w-100 px-md-4">
+        <div class="mr-auto d-md-inline-flex">
+          <a class="navbar-brand mb-0 p-0 h1">
+            <span class="d-flex flex-row">
+              <b class="logo-First-chr">S</b>
+              <b class="logo-chr">quareFeet </b>
+              <b class="logo-First-chr">S</b>
+              <b class="logo-chr">olutions</b>
+            </span>
           </a>
-        </li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav mr-auto  text-center">
+              <!-- <appSqFt-header-menu></appSqFt-header-menu> -->
+
+              <li class="nav-item active" ngbDropdown>
+                <a class="nav-link" routerLink="">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item dropdown" ngbDropdown>
+                <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>Re-Admin</a>
+
+                <div class="dropdown-menu subMenuItem" aria-labelledby="dropdown01" ngbDropdownMenu>
+                  <a class="dropdown-item subMenuItem" routerLink="">City Master</a>
+                  <a class="dropdown-item subMenuItem" routerLink="">Building Master</a>
+                  <a class="dropdown-item subMenuItem" routerLink="">Floor Master</a>
+                  <a class="dropdown-item subMenuItem" routerLink="">Seat Master</a>
+                  <a class="divider"></a>
+                  <a class="dropdown-item subMenuItem" routerLink="">Category Master</a>
+                  <a class="dropdown-item subMenuItem" routerLink="">Business Master</a>
+                  <a class="dropdown-item subMenuItem" routerLink="">CostCenter Master</a>
+                  <a class="divider"></a>
+                  <a class="dropdown-item subMenuItem" routerLink="">User Access Master</a>
+                </div>
+              </li>
+
+              <li class="nav-item" ngbDropdown>
+                <a class="nav-link" routerLink="about/48">BookIt</a>
+
+              </li>
+
+              <li class="nav-item" ngbDropdown>
+                <a class="nav-link" routerLink="about/48">Team View</a>
+
+              </li>
+
+              <li class="nav-item" ngbDropdown>
+                <a class="nav-link" routerLink="about/48">About</a>
+              </li>
+
+              <li class="nav-item" ngbDropdown>
+                <a class="nav-link" routerLink="user/28">Login</a>
+              </li>
 
 
-        <li class="nav-item" ngbDropdown>
-          <a class="nav-link" routerLink="about/48">About</a>
-        </li>
+              <li class="nav-item" ngbDropdown>
+                <a class="nav-link" routerLink="">Help</a>
 
-        <li class="nav-item" ngbDropdown>
-          <a class="nav-link" routerLink="user/28">Login</a>
-        </li>
+              </li>
 
-        <li class="nav-item dropdown" ngbDropdown>
-          <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>Category</a>
-
-          <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
-            <a class="dropdown-item" href="#">Angular</a>
-            <a class="dropdown-item" href="#">React</a>
-            <a class="dropdown-item" href="#">Vue.js</a>
+            </ul>
           </div>
-        </li>
+        </div>
+        <div class="col-md-3 col-sm-12 myLogin">
+          <form class="from-inline">
 
-        <li class="nav-item" ngbDropdown>
+            <input class="form-control" type="text" style="margin-top: 1em;margin-bottom: -1em; height:auto" placeholder="Parvesh Kapoor (0732642)"
+              readonly>
 
-        </li>
-
-      </ul>
+            <button class="btn btn-sm btn-outline-success" style="height:auto;width: -webkit-fill-available;text-align: left;" type="submit">Access Level : Admin </button>
+          </form>
+        </div>
+      </div>
     </div>
-
-    </div>
-
-    <div class="col-md-3 col-sm-12 myLogin">
-      <form class="from-inline">
-        
-        <input class="form-control" type="text" style="margin-top: 1em;margin-bottom: -1em; height:auto" 
-            placeholder="Parvesh Kapoor (0732642)" readonly>
-        
-        <button class="btn btn-sm btn-outline-success" style="height:auto;width: -webkit-fill-available;text-align: left;" 
-            type="submit">Access Level : Admin </button>
-      </form>
-    </div>
-
-  </div>
-</div>
-</nav>
+  </nav>
 </div>
