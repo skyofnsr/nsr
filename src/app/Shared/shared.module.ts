@@ -9,17 +9,15 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
     declarations: [     
         // AlertBoxComponent,
-        
         DataGrid
     ],   
     imports: [
         FormsModule,      
-        AlertModule.forRoot(), 
+        AlertModule.forRoot(),
         CommonModule
     ],
     exports: [
         // AlertBoxComponent,
-        
         DataGrid
     ],
     // providers:[AlertBoxComponent],
