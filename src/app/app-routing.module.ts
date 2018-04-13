@@ -6,10 +6,10 @@ import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  },
+  {path: '', redirectTo: 'home', pathMatch: 'full'}, 
+	{path: 'find', redirectTo: 'search'}, 
+	{path: 'home', component: HomeComponent},
+  
   {
     path: 'about/:id',
     component: AboutComponent
@@ -18,11 +18,16 @@ const routes: Routes = [
   {
     path: 'user/:id',
     component: UserComponent
+  },
+
+  {
+    path: '**', component: UserComponent
   }
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

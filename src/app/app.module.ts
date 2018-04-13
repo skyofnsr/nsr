@@ -12,11 +12,10 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
 import { HeaderComponent } from './header/header.component';
-import { HeaderMenuComponent } from './header/header-menu/header-menu.component';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
-import { MaterialModule } from './material.module';
+import { SharedModule  } from './Shared/shared.module';
+// import { MaterialModule } from './material.module';
 
 
 @NgModule({
@@ -25,15 +24,16 @@ import { MaterialModule } from './material.module';
     HomeComponent,
     AboutComponent,
     UserComponent,
-    HeaderComponent,
-    HeaderMenuComponent
+    
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule,
+    // MaterialModule,
+    SharedModule,
     AngularFontAwesomeModule,
     NgbModule.forRoot()
   ],

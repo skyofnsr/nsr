@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';    
-import { Router } from '@angular/router';     
+import { ActivatedRoute, Router } from '@angular/router';    
+// import { Router } from '@angular/router';     
 import { DataService } from '../data.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
 goals: any;
 pushRightClass: string = 'sidebar-mini';
 
-  constructor(private route: ActivatedRoute,private router: Router, private _data: DataService) { 
+  constructor(private route: ActivatedRoute, private router: Router, private _data: DataService) { 
     const dom: any = document.querySelector('body');
     dom.classList.add('fixed-navbar');
     
@@ -29,7 +29,7 @@ pushRightClass: string = 'sidebar-mini';
     dom.classList.toggle(this.pushRightClass);
   }
   sendMeHome() {
-    this.router.navigate(['']);
+    this.router.navigate(['home']);
   }
   
 }

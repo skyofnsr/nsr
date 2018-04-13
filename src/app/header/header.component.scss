@@ -1,5 +1,5 @@
 .logo-First-chr {
-    font-family: 'serif';
+    font-family: serif;
     font-weight: bold;
     color: dodgerblue;
     font-size: xx-large;
@@ -15,11 +15,10 @@
   }
   
   .logo-bottom-chr {
-    font-family: serif;
-    font-weight: bold;
-    font-size: small;
-    text-align: right;
-    margin-top: -47px;
+    font-size: x-small;
+    margin-left: -147px;
+    margin-top: 14px;
+    color: chocolate;
   }
   
   .banner-Marque {
@@ -54,6 +53,8 @@ display: inline-flex;
   height: auto;  
 }
 
+
+
 }
 
 
@@ -61,7 +62,19 @@ display: inline-flex;
   .myLogin{
    margin-top: -30px;
   }
+
+  .logo-First-chr {
+    font-size: x-large;
+  }
   
+  .logo-chr {
+    font-size: large;
+  }
+  
+ .user_img img {
+  display: none;
+}
+
 }
 
 .from-inline{
@@ -74,7 +87,6 @@ display: inline-flex;
   padding-bottom: 0px;
   
 }
-
 .marquee {
   height: 25px;
   width: auto;
@@ -87,4 +99,16 @@ display: inline-flex;
 
 .subMenuItem {
 line-height: normal;
+}
+
+.user_img img {
+  width: 55px;
+  max-width: 100%;
+
+  vertical-align: top;
+}
+.user_img img.square {
+  border-radius: 10%;
+  max-height: 50px;
+  max-width: 50px;
 }
