@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
-import { DataService } from '../data.service';
+
+import { DataService } from '../services/data.service' 
 
 @Component({
   selector: 'appSqFt-home',
